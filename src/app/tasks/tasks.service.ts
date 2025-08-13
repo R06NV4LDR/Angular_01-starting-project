@@ -28,12 +28,18 @@ export class TasksService {
       dueDate: '2025-10-15',
     },
     {
-      id: 't1',
+      id: 't4',
       userId: 'u1',
       title: 'Do laundry',
       summary: 'Wash and dry clothes',
       dueDate: '2025-08-13',
     },
+    {      id: 't5',
+      userId: 'u2',
+      title: 'Machine Learning with Python and TensorFlow',
+      summary: 'How did this topic end up here and gets used as a Task Topic, it`s hilarious lol XD',
+      dueDate: '1993-03-03',
+    }
   ];
 
   constructor() {
