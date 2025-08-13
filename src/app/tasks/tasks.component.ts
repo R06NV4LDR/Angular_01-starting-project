@@ -5,8 +5,14 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './tasks.component.html',
-  styleUrl: './tasks.component.css'
+  styleUrl: './tasks.component.css',
 })
 export class TasksComponent {
-@Input({required: true}) name!: string
+  // Alternative for ?
+  // Instead telling TS that a value might not be defined initially,
+  // we can use ? or union type features like in the example below
+  
+  // @Input() name: string | undefined;
+  
+  @Input() name?: string;
 }
