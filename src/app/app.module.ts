@@ -8,8 +8,8 @@ import { TasksComponent } from './tasks/tasks.component';
 import { UserComponent } from './user/user.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent, UserComponent, TasksComponent],
   bootstrap: [AppComponent],
-  imports: [BrowserModule, HeaderComponent, UserComponent, TasksComponent]
+  imports: [BrowserModule]
 })
 export class AppModule {}
