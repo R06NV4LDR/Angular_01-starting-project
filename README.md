@@ -25,3 +25,30 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+---
+
+# Deleted parts from the Angular Course
+
+## user.component.ts
+
+```ts
+// Decorator | The old way to create inputs
+//-------------------------------------------
+ @Input({ required: true }) id!: string;
+ @Input({ required: true }) avatar!: string;
+ @Input({ required: true }) name!: string;
+
+  // New approach
+  //-------------------------------------------
+select = output<string>();
+
+  // Signals | The new way to create inputs
+  //-------------------------------------------
+avatar = input.required<string>();
+name = input.required<string>();
+
+ imagePath = computed(() => {
+     return 'assets/users/' + this.avatar();
+ })
+```
