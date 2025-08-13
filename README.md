@@ -52,3 +52,12 @@ name = input.required<string>();
      return 'assets/users/' + this.avatar();
  })
 ```
+
+## tasks.component.ts
+
+  // Alternative for ?
+  // Instead telling TS that a value might not be defined initially,
+  // we can use ? or union type features like in the example below
+
+  // @Input() name: string | undefined;
+  

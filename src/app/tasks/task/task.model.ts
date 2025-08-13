@@ -9,5 +9,5 @@ export interface Task {
 export interface NewTaskData {
   title: string;
   summary: string;
-  dueDate: string;
+  date: string;
 }
